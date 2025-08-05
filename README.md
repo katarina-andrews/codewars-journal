@@ -57,6 +57,19 @@ A collection of some challenges I've completed and how I've learned from them.
 
 **Other Notes:** The first version I had passed the test but didn't pass on submit because it took too long so I had to figure out a way to make it faster. In the directions it did note that "the most trivial solutions might time out." This solution skips over even numbers and takes a a sqrt of a number and checks only if its divisible by the odd numbers less than or equal to the sqrt. 
 
+Previous code:
+```js 
+function isPrime(num) {
+    if (num <= 1) return false;    
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return false; 
+        }
+    }
+    return true; 
+}
+```
+
 Examples: 
 
 ```
